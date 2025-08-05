@@ -4,7 +4,7 @@ Um componente de interface responsivo que destaca avaliações de clientes, desa
 
 ## 🔗 Link do projeto online
 
-[🔍 Acesse aqui no GitHub Pages]()
+[🔍 Acesse aqui no GitHub Pages](https://cledeocirmarafao.github.io/projeto-social-proof-section/)
 
 ## ✨ Funcionalidades
 
