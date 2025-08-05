@@ -1,0 +1,166 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../assets/images/bg-pattern-top-desktop.svg) no-repeat,
+    url(../assets/images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "information ratings"
+    "testimonial-cards testimonial-cards"
+    "footer footer";
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+.container .information {
+  grid-area: information;
+}
+
+.container .information h1 {
+  color: var(--primary-color);
+  font-size: 6rem;
+  padding: 3rem;
+  padding-right: 10rem;
+}
+
+.container .information p {
+  color: var(--neutral);
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  padding: 0 3rem;
+}
+
+.container .ratings {
+  grid-area: ratings;
+}
+
+.container .ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  gap: 1.5rem;
+}
+
+.container .ratings .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--about-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.container .ratings .rating .stars span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../assets/images/icon-star.svg) no-repeat center / contain;
+}
+
+.container .ratings .rating:first-child {
+  margin: 0 20% 0 0;
+}
+
+.container .ratings .rating:nth-child(2) {
+  margin: 0 10% 0 12%;
+}
+
+.container .ratings .rating:last-child {
+  margin: 0 0 0 20%;
+}
+
+.container .ratings .rating .stars {
+  padding-right: 2.5rem;
+}
+
+.container .ratings .rating:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #f596f5;
+}
+
+.container .testimonial-cards {
+  grid-area: testimonial-cards;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding: 3rem;
+}
+
+.container .testimonial-cards article:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px var(--buyers-color);
+}
+
+.container .testimonial-cards .side-by-side .buyer-named .highlight {
+  color: var(--buyers-color);
+  font-weight: 500;
+}
+
+.container .testimonial-cards article {
+  border: 1px solid transparent;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  padding: 3rem;
+  color: var(--about-color);
+}
+
+.container .testimonial-cards article p {
+  font-size: 1.7rem;
+}
+
+.container .testimonial-cards .side-by-side {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.container .testimonial-cards .side-by-side .people img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.container .testimonial-cards article:nth-child(2) {
+  margin-top: 3rem;
+}
+
+.container .testimonial-cards article:last-child {
+  margin-top: 6rem;
+}
+
+.container .footer {
+  grid-area: footer;
+  text-align: center;
+  color: var(--neutral);
+  font-size: 2rem;
+  margin: 1rem;
+  background:radial-gradient(circle,rgba(153, 51, 153, 1) 0%, rgba(0, 0, 0, 1) 47%, rgba(252, 70, 107, 1) 100%);
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+.container .footer a{
+    color: var(--about-color);
+}
